@@ -20,7 +20,7 @@
                         <thead>
                             <tr>
                                 <th class="horario">#</th>
-                                <th class="nome">Nome</th>
+                                <th class="nome">Resultado</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -60,11 +60,13 @@
                     </table>
                     
                     <input type="file" name="planilha-clientes" id="planilha-clientes" style="display: none;">
-                    <label for="planilha-clientes">Importar arquivo</label>
+                    <label for="planilha-clientes" id="importar-arquivo">Importar arquivo</label>
 
                     <button type="submit">Sortear</button>
                 </form>
             </div>
         </div>
+
+        <script src="_js/main.js"></script>
     </body>
 </html>
