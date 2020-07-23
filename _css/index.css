@@ -51,10 +51,6 @@ body, html {
     align-items: center;
 }
 
-.container .content form p{
-    margin-bottom: 200px;
-}
-
 .container .content form label,
 .container .content form button{
     border: 1px solid #000;

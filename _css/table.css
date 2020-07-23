@@ -1,0 +1,53 @@
+:root {
+    --laranja: #f76221;
+}
+
+.content-table {
+    border-collapse: collapse;
+    position: relative;
+    margin: 10px 0 10px 0;
+    font-size: 0.9em;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+    display: block;
+}
+
+.content-table thead,
+.content-table tbody {
+    display: block;
+    width: 100%;
+}
+
+.content-table tbody {
+    overflow-y: scroll;
+    height: 247px;
+}
+
+.content-table thead tr {
+    background: var(--laranja);
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ccc;
+}
+
+.nome {
+    width: 100%;
+}
