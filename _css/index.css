@@ -7,3 +7,71 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #f76221;
+    z-index: -1;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: url('../_imagens/bg.PNG');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .content {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18pt;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.25);
+}
+
+.container .content h1{
+    font-size: 36pt;
+    color: #f76221;
+}
+
+.container .content form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .content form p{
+    margin-bottom: 200px;
+}
+
+.container .content form label,
+.container .content form button{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 14pt;
+    transition: all ease 0.4s;
+    cursor: pointer;
+    width: 160px;
+    text-align: center;
+    margin-bottom: 14px;
+    background-color: #fff;
+}
+
+.container .content form label:hover,
+.container .content form button:hover{
+    border-color: #f76221;
+    color: #f76221;
+}
+
