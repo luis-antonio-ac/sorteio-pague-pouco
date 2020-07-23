@@ -13,8 +13,8 @@
             <div class="content">
                 <h1>Sorteio pague pouco</h1>
 
-                <form action="">
-                    <p>Sortear <input type="number"> Pessoas</p>
+                <form action="_php/sortear.php" method="POST">
+                    <p>Sortear <input type="number" name="num_pessoas"> Pessoas</p>
 
                     <table class="content-table">
                         <thead>
