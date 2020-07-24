@@ -13,8 +13,8 @@
             <div class="content">
                 <h1>Sorteio pague pouco</h1>
 
-                <form action="_php/sortear.php" method="POST">
-                    <p>Sortear <input type="number" name="num_pessoas"> Pessoas</p>
+                <form action="_php/sortear.php" method="POST" enctype="multipart/form-data">
+                    <p>Sortear <input type="number" name="num_pessoas" min="1"> Pessoas</p>
 
                     <table class="content-table">
                         <thead>
@@ -24,38 +24,17 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Luís Antônio Lima Santiago</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Luís Antônio Lima Santiago</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Luís Antônio Lima Santiago</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Luís Antônio Lima Santiago</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Luís Antônio Lima Santiago</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Luís Antônio Lima Santiago</td>
-                            </tr>
-                            <tr>
-                                <td>7</td>
-                                <td>Luís Antônio Lima Santiago</td>
-                            </tr>
-                            <tr>
-                                <td>8</td>
-                                <td>Luís Antônio Lima Santiago</td>
-                            </tr>
+                            <?php
+                                session_start();
+                                if(isset($_SESSION['nomes-sorteados'])) {
+                                    for($i=0;$i<$_SESSION['quantidade-sorteada'];$i++) {
+                                        echo "<tr>";
+                                        echo "    <td>" . ($i + 1) . "</td>";
+                                        echo "    <td class='nome'>" . $_SESSION['nomes-sorteados'][$i] . "</td>";
+                                        echo "</tr>";
+                                    }
+                                }
+                            ?>
                         </tbody>
                     </table>
                     
